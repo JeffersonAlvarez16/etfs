@@ -17,13 +17,13 @@ from plyer import notification
 import schedule
 import threading
 import time
-
+import streamlit as st
 # Cargar variables de entorno
 load_dotenv()
 
 # Configuración de Binance
-BINANCE_API_KEY = os.getenv('BINANCE_API_KEY')
-BINANCE_API_SECRET = os.getenv('BINANCE_API_SECRET')
+BINANCE_API_KEY = st.secrets["BINANCE_API_KEY"]
+BINANCE_API_SECRET = st.secrets["BINANCE_API_SECRET"]
 client = Client(BINANCE_API_KEY, BINANCE_API_SECRET)
 
 # Configuración de la página
