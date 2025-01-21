@@ -5,3 +5,10 @@ plotly
 matplotlib
 bcrypt
 python-dotenv
+requests
+ta
+numpy
+python-binance
+schedule
+plyer
+sqlite-utils
